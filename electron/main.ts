@@ -1,7 +1,3 @@
-// import { DownloadManager } from "../core/DownloadManager";
-// import ElectronStorage from "../core/storage/ElectronStorage";
-// import os from 'os';
-
 const { app, BrowserWindow } = require('electron');
 const path = require('path');
 
@@ -9,11 +5,6 @@ const path = require('path');
 if (require('electron-squirrel-startup')) {
   app.quit();
 }
-
-// const downloadManager = new DownloadManager({
-//   defaultDownloadsFolder: path.join(os.homedir(), 'Downloads', 'AllMediaDownloader'),
-//   storage: new ElectronStorage()
-// })
 
 const createWindow = () => {
   // Create the browser window.
